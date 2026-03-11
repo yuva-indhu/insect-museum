@@ -29,9 +29,9 @@ function Experience() {
 
         {experiences.map((exp, index) => (
           <div
-            key={index}
-            className="bg-white rounded-lg shadow-lg hover:shadow-2xl transition overflow-hidden"
-          >
+  key={index}
+  className="bg-white dark:bg-gray-800 rounded-lg shadow-lg hover:shadow-2xl transition overflow-hidden"
+>
 
             <img
               src={exp.img}
@@ -41,13 +41,12 @@ function Experience() {
 
             <div className="p-5">
 
-              <h3 className="text-xl font-semibold">
-                {exp.title}
-              </h3>
-
-              <p className="mt-2 text-gray-600">
-                {exp.desc}
-              </p>
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
+  {exp.title}
+</h3>
+<p className="mt-2 text-gray-600 dark:text-gray-300">
+  {exp.desc}
+</p>
 
               <button className="mt-4 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
                 Read More
